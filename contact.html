@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 
-<html>
+
 	<!-- First static page-->
 	<head>
 	
@@ -24,17 +25,26 @@
 		
 		<form>
 				<label>Name:</label>
-				<input type="text" placeholder="Your Name">
+				<input type="text" autofocus required minlength="5" maxlength="25" placeholder="Your Name">
 				<br>
 				<br>
 				<label>Email:</label>
-				<input type="email" placeholder="Your email address">
+				<input type="email" required placeholder="Your email address">
 				<br>
 				<br>
 				<label>Mobile:</label>
-				<input type="number" placeholder="Your mobile no" >
+				<input type="text" required  pattern="[6789][0-9]{9}" placeholder="Your mobile no">
 				<br>
 				<br>
+				
+				<label>Country:</label>
+				<input type="text" value="India" readonly disabled>
+				<br>
+				<br>
+								
+				<!--<input type="number" required min="2000" max="20000" />-->
+				
+				
 				Passout:
 				<label for="1">
 				<input type="radio" value="Yes" name="class" id="1">Yes
@@ -48,6 +58,7 @@
 				
 				<label for="course">Select course:</label>
 				<select name="course" placeholder="please select">
+					<option value="jfs">Please select</option>
 					<option value="jfs">Java Full Stack</option>
 					<option value="pfs">Python Full Stack</option>
 					<option value="rjs">React JS Training</option>
@@ -60,6 +71,8 @@
 				<input type="submit" value="sumit">
 		
 		</form>
+
+		
 		
 		<hr>
 		<pre><h3>Contact No.:9591619191 (24/7 Whatsapp)     Email: info@prostackacademy.com</h3></pre>
